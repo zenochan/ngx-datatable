@@ -13,7 +13,6 @@
   },
   "private": true,
   "files": [
-    "projects/ngx-datatable",
     "dist/ngx-datatable"
   ],
   "main": "dist/ngx-datatable/ngx-datatable.d.ts",
