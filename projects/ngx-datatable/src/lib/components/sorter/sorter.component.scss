@@ -1,0 +1,19 @@
+.sort {
+  display: inline-block;
+  position: relative;
+  top: -0.2em;
+  margin-left: 0.3em;
+  width: 0;
+  height: 0;
+
+  &.asc, &.desc {
+    border-style: solid;
+    content: '';
+    border-color: transparent transparent #007bff;
+    border-width: 0 0.5em 0.5em;
+  }
+
+  &.asc {
+    transform: rotate(180deg);
+  }
+}

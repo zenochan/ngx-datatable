@@ -1,0 +1,18 @@
+<zz-paginator #p>
+  <ngb-pagination style="flex: 1;margin-right: 48px"
+                  (pageChange)="p.setPage($event)"
+                  [page]="p.pageInfo?.page"
+                  [pageSize]="p.pageInfo?.size"
+                  [maxSize]="7"
+                  [collectionSize]="p.pageInfo?.total"
+  ></ngb-pagination>
+  <ul class="pagination pull-right float-right">
+    <li class="page-item"
+        *ngFor="let rows of rowsOnPageSet"
+        [class.active]="p.pageInfo?.size===rows"
+        (click)="p.setRowsOnPage(rows)">
+      <a class="page-link" style="cursor: pointer">{{rows}}</a>
+    </li>
+  </ul>
+
+</zz-paginator>

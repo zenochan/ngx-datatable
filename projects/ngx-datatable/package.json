@@ -1,0 +1,11 @@
+{
+  "name": "@zenochan/ngx-datatable",
+  "version": "0.0.1",
+  "repository": "",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3",
+    "@ng-bootstrap/ng-bootstrap": "^5.0.0-rc.0",
+    "bootstrap": "^4.3.1"
+  }
+}

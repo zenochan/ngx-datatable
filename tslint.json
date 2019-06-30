@@ -44,6 +44,7 @@
       }
     ],
     "no-consecutive-blank-lines": false,
+    "one-line": true,
     "no-console": [
       true,
       "debug",

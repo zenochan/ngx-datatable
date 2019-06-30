@@ -119,6 +119,42 @@
           }
         }
       }
-    }},
+    },
+    "ngx-datatable": {
+      "projectType": "library",
+      "root": "projects/ngx-datatable",
+      "sourceRoot": "projects/ngx-datatable/src",
+      "prefix": "zz",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-datatable/tsconfig.lib.json",
+            "project": "projects/ngx-datatable/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-datatable/src/test.ts",
+            "tsConfig": "projects/ngx-datatable/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-datatable/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-datatable/tsconfig.lib.json",
+              "projects/ngx-datatable/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "ngx-pagedata-lib"
 }
