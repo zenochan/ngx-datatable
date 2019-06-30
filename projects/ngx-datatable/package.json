@@ -1,7 +1,12 @@
 {
   "name": "@zenochan/ngx-datatable",
   "version": "0.0.1",
-  "repository": "",
+  "homepage": "https://zenochan.github.io/ngx-datatable",
+  "repository": "git@github.com:zenochan/ngx-datatable.git",
+  "author": {
+    "email": "zenochan@qq.com",
+    "name": "Zeno Chan"
+  },
   "peerDependencies": {
     "@angular/common": "^8.0.3",
     "@angular/core": "^8.0.3",
